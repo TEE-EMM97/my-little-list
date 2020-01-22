@@ -11,7 +11,7 @@
                 .state('events_detail', {
                     cache: false,
                     url: '/events_detail',
-                    templateUrl: 'states/event-update/events.update.html',
+                    templateUrl: 'states/event-detail/events.detail.html',
                     params: { 'selected': 0 },
                     controller: 'eventsDetailCtrl as vm'
                 })
