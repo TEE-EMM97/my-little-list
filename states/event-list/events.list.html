@@ -1,0 +1,24 @@
+<uiview>
+    <div style="background-color: #272632;">
+    
+            <div ng-hide="!vm.noEvents">
+                <ul class="list">
+                    <a href="#" ng-repeat="event in vm.events">
+                        <li class="item item-divider" ng-click="vm.onItemSelected($index)">{{event.name}}</li>
+                    </a>
+                </ul>
+            </div>
+    
+    
+            <div ng-hide="!vm.noEvents"">
+                <h1 class="light text-center">No Items Yet!</h1>
+            </div>
+    
+        </div>
+    
+        <footer class="footer">
+            <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="vm.update()">Update</button>
+        </footer>
+    
+    </div>
+</uiview>
